@@ -18,7 +18,7 @@ do
 { 
 	try
 	{  
-		Add-AzureRMAccount -ServicePrincipal -Tenant $Conn.TenantID -ApplicationId $Conn.ApplicationID -CertificateThumbprint $Conn.CertificateThumbprint
+		Add-AzureRMAccount -ServicePrincipal -TenantId $Conn.TenantID -ApplicationId $Conn.ApplicationID -CertificateThumbprint $Conn.CertificateThumbprint
 		$syncOk = $true
 	}
 	catch

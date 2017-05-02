@@ -462,7 +462,7 @@ do
 { 
 	try
 	{  
-		Add-AzureRMAccount -ServicePrincipal -Tenant $ArmConn.TenantID -ApplicationId $ArmConn.ApplicationID -CertificateThumbprint $ArmConn.CertificateThumbprint
+		Add-AzureRMAccount -ServicePrincipal -TenantId $ArmConn.TenantID -ApplicationId $ArmConn.ApplicationID -CertificateThumbprint $ArmConn.CertificateThumbprint
 		$syncOk = $true
 	}
 	catch
